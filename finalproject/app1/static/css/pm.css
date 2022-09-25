@@ -1,0 +1,22 @@
+*{
+    user-select: none;
+}
+body{
+    background-color: #080710;
+ 
+}
+img{
+    height: 500px;
+    width: 500px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.main{
+    display: flex;
+    
+}
+.para{
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+}

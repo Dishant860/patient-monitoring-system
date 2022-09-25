@@ -1,0 +1,201 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <script src="https://kit.fontawesome.com/b5dde61ab1.js" crossorigin="anonymous"></script>
+    <script>
+
+        function getddl() {
+
+            document.getElementById('lbl').innerHTML = ("<div class=test><div id=b><p>Card Number</P><input type=text><p id=mop>Expiry </p><input type=month id=mo></div><div id=c><p id=ch>Card Holder name</P><input type=text id=hn><p id=vccv>CVV/CVC</p><input type=number id=cvvc></div></div>")
+
+        }
+        function getddl1() {
+            document.getElementById('lbl').innerHTML = ("<div class=test><div id=b><p>Card Number</P><input type=text><p id=mop>Expiry </p><input type=month id=mo></div><div id=c><p id=ch>Security Code (CVC)</P><input type=text id=hn1></div></div>")
+        }
+        function getddl2() {
+
+            document.getElementById('lbl1').innerHTML = ("<button class=pay>PAY</button>")
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="{% static 'images/bggg.png' %}" alt="logo" class="logo">
+        <p class="pm"> Patient Monitoring</p>
+        <p class="payment">Payment Gateway</p>
+
+    </div>
+
+    <div class="main">
+        <div class="bi">
+            <p id="pl">Bill Information</p>
+            <p id="hline1">_____________________________________________________________________________________</p>
+            <div class="db">
+                <div class="detail">
+                    <input type="text" placeholder="First Name" id="firstname">
+                    <input type="text" placeholder="Last Name" id="lastname">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="text" placeholder="Contact Number" id="mobileno">
+                </div>
+                <div class="bill">
+                    <p id="pl">Bill </p>
+                    <p id="hline1">__________________________________________________</p>
+                    <div class="table">
+                        <table id="medii">
+                            <thead>
+                                <tr>
+
+                                    <th>Date</th>
+                                    <th>Service Description</th>
+                                    <th>Fees/charges</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td>Synthroid </td>
+                                    <td>454545455</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Crestor </td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td>Ventolin HFA</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Nexium </td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Advair Diskus</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Lantus Solostar</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Hydrocodone</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td>Generic Zocor</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td>Lisinopril </td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td>Generic Norvasc </td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Amoxicillin</td>
+                                    <td>45454545</td>
+                                </tr>
+                                <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Amoxicillin</td>
+                                    <td>45454545</td>
+                                </tr>  <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Amoxicillin</td>
+                                    <td>45454545</td>
+                                </tr>  <tr>
+                                    <td>24/03/2001</td>
+                                    <td> Amoxicillin</td>
+                                    <td>45454545</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p id="hline1">__________________________________________________</p>
+                    <div class="totalp">
+                    <p id="total">Total :</p>
+                    <p id="total1">54545454</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="pi">
+            <p id="pl">Payment Information</p>
+            <p id="hline1">_____________________________________________________________________________________</p>
+            <div class="fr">
+                <div class="dm">
+
+                    <p>Select Payment for : </p>
+
+                    <select>
+                        <option>Bill</option>
+                        <option>Registration Fees</option>
+                        <option>Fees of Doctor</option>
+                        <option>Report Fees</option>
+                        <option>Medicine Payment</option>
+                        <option>Operation Charges </option>
+                        <option>Other Payments</option>
+                    </select>
+
+                </div>
+                <p id="amtp">Amount : </p>
+                <input type="number" placeholder="Enter Amount">
+
+            </div>
+            <div class="sr">
+                <div class="pradio">
+                    <input type="radio" name="card" class="cradio" onclick="getddl()">
+                    <p>Debit Card</p>
+                    <input type="radio" name="card" class="cradio" onclick="getddl1()">
+                    <p>Credit Card</p>
+                </div>
+                <p id="srp">-- OR --</p>
+                <div class="paybtn">
+                    <button id="gpay"><i class="fa-brands fa-google-pay"></i></button>
+                    <button id="paypal"><i class="fa-brands fa-paypal"></i></button>
+                    <button id="applepay"><i class="fa-brands fa-apple-pay"></i></button>
+                    <button id="amazonpay"><i class="fa-brands fa-cc-amazon-pay"></i></button>
+                </div>
+            </div>
+
+            <label id="lbl"></label>
+            <div class="payc">
+                <div class="last">
+                    <div class="tc">
+                        <input type="checkbox" class="check" onclick="getddl2()">
+                        <p>I accept the</p>
+                        <a href="#">terms and condition</a>
+                        <p>of the service and the</p>
+                        <a href="#">privacy policy</a>
+                    </div>
+                    <label id="lbl1"></label>
+
+                    <!-- <button class="pay">PAY</button> -->
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

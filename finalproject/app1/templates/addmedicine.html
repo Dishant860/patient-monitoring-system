@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/addmedicine.css' %}">
+    <script src="https://kit.fontawesome.com/b5dde61ab1.js" crossorigin="anonymous"></script>
+    <title>Add_Medicine</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="{% static 'images/bggg.png' %}" alt="logo" class="logo">
+        <p class="pm"> Patient Monitoring</p>
+        <div class="search">
+
+            <input type="text" placeholder="search here..." id="searchbar">
+            <div class="circle"></div>
+            <a class="search-btn" href="{% url 'search' %}">
+                <i class="fa-solid fa-magnifying-glass " id="sicon"></i>
+            </a>
+
+        </div>
+        <a href="{% url 'noti' %}"> <i class="fa-solid fa-bell "></i></a>
+        <img src="{% static 'images/profile.png' %}" alt="profile" class="prfle">
+    </div>
+    <div class="main">
+        <div class="side">
+            <div class="profile">
+                <i class="fa-solid fa-user-doctor fa-4x"></i>
+                <div class="pname">
+                    <p>Dishant Adesara</p>
+                    <p>Admin</p>
+                </div>
+
+            </div>
+            <p id="hline">______________________________________</p>
+            <div class="sd">
+                <i class="fa-solid fa-user-doctor fa-2x" id="doc"></i>
+                <p id="sdp">Specialized Doctors</p>
+            </div>
+            <div class="sd">
+                <i class="fa-regular fa-hospital fa-2x"></i>
+                <a href="{% url 'hospital' %}">
+                    <p id="sdp">Hospitals</p>
+                </a>
+            </div>
+            <div class="sd">
+                <i class="fa-solid fa-star-of-life fa-2x"></i>
+                <p id="sdp">Emergency Ward</p>
+            </div>
+            <div class="sd">
+                <i class="fa-solid fa-capsules fa-2x"></i>
+                <a href="{% url 'medicine' %}">
+                    <p id="sdp">Medicine</p>
+                </a>
+            </div>
+            <div class="sd">
+                <p id="pay">₹</p>
+                <a href="{% url 'payment' %}">
+                    <p id="sdp">Payments</p>
+                </a>
+            </div>
+            <div class="setting">
+                <i class="fa-solid fa-gear fa-2x"></i>
+                <p id="set">Setting</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="panel">
+
+
+            <div class="plname">
+                <p id="pl">Add / Remove Medicine</p>
+
+            </div>
+            <p id="hline1">
+                ________________________________________________________________________________________________________________________________________
+            </p>
+           
+                <div class="inputmedi">
+                    <form method="POST">
+                        {% csrf_token %}
+        
+                    <p>Medicine Name<input type="text" placeholder="Enter medicine name" name="medicinename"></p>
+                    <p>Medicine Uses<input type="text" placeholder="Enter medicine uses" name="medicineuse"></p>
+                    <input type="submit" value="Add" id="add">
+                </form>
+
+                </div>
+            <p id="hline2">
+                ________________________________________________________________________________________________________________________________________
+            </p>
+            <div class="inputmedia">
+                <p>Medicine Name<input type="text" placeholder="Enter medicine Name"></p>
+                <input type="submit" value="Remove" id="remove">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>

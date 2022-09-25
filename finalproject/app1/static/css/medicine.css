@@ -1,0 +1,328 @@
+*{
+    user-select: none;
+}
+body{
+    background-color: #080710;
+ 
+}
+body::-webkit-scrollbar {
+    display: none; 
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.main{
+    height: 950px;
+    width: 100%;
+    display: flex;
+}
+.side{
+    height: 650px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.panel{
+    height: 940px;
+    width: 1140px;
+}
+.logo{
+    height: 80px;
+    width: 100px;
+    margin-top: -1px;
+    padding: 0;
+    border-width: 50%;
+    margin-left: 10px;
+
+}
+.pm{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+    border: none;
+    padding: 0;
+    
+    color: whitesmoke;
+}
+::placeholder{
+    color: whitesmoke;
+}
+
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+    border-radius: 40px;
+    padding: 0 10px;
+    margin-top: 1px;
+    font-size: 17px;
+    font-weight: 300;
+
+}
+.circle{
+    height: 41px;
+    width: 51px;
+    background-color: #28272f;
+    border-radius: 50%;
+    margin-left: -55px;
+    margin-top: 2px;
+}
+#sdp{
+    margin-top: 10px;
+}
+.search{
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 500px;
+    display: flex;
+}
+#sicon{
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+.search-btn{
+    color:whitesmoke;
+    float: right;
+   margin-top: 5px;
+    border-radius: 50%;
+    margin-left: -40px;
+}
+
+.fa-bell{
+    color: whitesmoke;
+    margin-left: 60px ;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.prfle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.fa-gear{
+    color: whitesmoke;
+    margin-left: 50px ;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.fa-user-doctor{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 40px; 
+}
+.profile{
+    display: flex;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.pname{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#hline{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #080710;
+    padding: 0;
+}
+#doc{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px; 
+
+}
+.sd{
+    display: flex;
+}
+.sd i{
+    font-size: 20px;
+}
+
+#sdp{
+  color: whitesmoke;
+  margin-top: 35px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.sd a{
+    text-decoration: none;
+}
+
+.fa-hospital{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px; 
+
+}
+.fa-star-of-life{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px;    
+}
+.fa-capsules{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px;    
+}
+#pay{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 30px;  
+    font-size: 30px;
+}
+.setting{
+    margin-left: -10px;
+    display: flex;
+    margin-top: -20px;
+}
+#set{
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+
+
+.medicine{
+    height: 650px;
+    width: 1100px;
+    background-color: rgba(255,255,255,0.13);
+
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+
+
+
+
+#pl{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-left: 40px;
+    padding-top: 20px;
+    margin-top: -10px;
+}
+#hline1{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #080710;
+    padding: 0;
+    margin-top:  -15px;
+}
+#checkbox{
+    height: 25px;
+    width: 25px;
+}
+
+.fa-plus{
+    color: white;
+}
+.buya{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#medii{
+    height: 450px;
+    width: 1000px;
+    margin-top: -5px; 
+    margin-left: 40px; 
+    border-color: #080710;
+    color: whitesmoke;
+    text-align: left;
+}
+#medii tbody{
+    height: 450px;
+}
+#addpl{
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 650px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #28272f ;
+    color: #1baff3;
+    border: 2px solid #1baff3;
+   
+}
+#addpl:hover{
+       border: 2px solid #1baff3;
+       color: white;
+       background-color: #1baff3;
+}
+.plname{
+    height: 60px;
+    display: flex;
+}
+
+table{
+    width: 1000px;
+    height: 500px;
+    display: block;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 15px;
+    border-color: #080710;
+    color: whitesmoke;
+}
+thead{
+    display: inline-block;
+    width: 1100px;
+    height: 30px;
+
+}
+tbody{
+    height: 470px;
+    display: inline-block;
+    width: 1100px;
+    overflow: auto;
+}
+td{
+    padding-left: 50px;
+    padding-right: 35px;
+    overflow: auto;
+
+}
+th{
+    padding-left: 41px;
+    padding-right: 51px;
+}
+tbody::-webkit-scrollbar {
+    display: none; 
+}
+#checkbox{
+    height: 20px;
+    width: 20px;
+}
+#buy{
+    height: 40px;
+    width: 100px;
+    margin-top: 2px;
+    margin-left: 900px;
+    color: white;
+    background-color: #28272f;
+    border-radius: 5px;
+    border-color: #1baff3;
+}
+#buy a{
+    text-decoration: none;
+    color: white;
+}

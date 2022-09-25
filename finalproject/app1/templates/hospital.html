@@ -1,0 +1,118 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/hospital.css' %}">
+    <script src="https://kit.fontawesome.com/b5dde61ab1.js" crossorigin="anonymous"></script>
+    <title>Hospital</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="{% static 'images/bggg.png' %}" alt="logo" class="logo">
+        <p class="pm"> Patient Monitoring</p>
+        <div class="search">
+
+            <input type="text" placeholder="search here..." id="searchbar">
+            <div class="circle"></div>
+            <a class="search-btn" href="{% url 'search' %}">
+                <i class="fa-solid fa-magnifying-glass " id="sicon"></i>
+            </a>
+
+        </div>
+        <a href="{% url 'noti' %}"> <i class="fa-solid fa-bell "></i></a>
+        <img src="{% static 'images/profile.png' %}" alt="profile" class="prfle">
+    </div>
+    <div class="main">
+        <div class="side">
+            <div class="profile">
+                <i class="fa-solid fa-user-doctor fa-4x"></i>
+                <div class="pname">
+                    <p>Dishant Adesara</p>
+                    <p>Admin</p>
+                </div>
+
+            </div>
+            <p id="hline">______________________________________</p>
+            <div class="sd">
+                <i class="fa-solid fa-user-doctor fa-2x" id="doc"></i>
+                <p id="sdp">Specialized Doctors</p>
+            </div>
+            <div class="sd">
+                <i class="fa-regular fa-hospital fa-2x"></i>
+                <a href="{% url 'hospital' %}"><p id="sdp">Hospitals</p></a>
+            </div>
+            <div class="sd">
+                <i class="fa-solid fa-star-of-life fa-2x"></i>
+                <p id="sdp">Emergency Ward</p>
+            </div>
+            <div class="sd">
+                <i class="fa-solid fa-capsules fa-2x"></i>
+                <a href="{% url 'medicine' %}">      <p id="sdp">Medicine</p></a>
+            </div>
+            <div class="sd">
+                <p id="pay">₹</p>
+            <a href="{% url 'payment' %}">    <p id="sdp">Payments</p></a>
+            </div>
+            <div class="setting">
+                <i class="fa-solid fa-gear fa-2x"></i>
+                <p id="set">Setting</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="panel">
+
+
+            <div class="plname">
+                <p id="pl">Hospital</p>
+
+            </div>
+            <p id="hline1">
+                ________________________________________________________________________________________________________________________________________
+            </p>
+            <div class="hos">
+                <p>Zydus Hospital</p>
+                <p>Address : Zydus Hospital Rd, Sarkhej - Gandhinagar Hwy, near Sola Bridge, Thaltej, Ahmedabad, Gujarat 380054</p>
+                <p>Call : 9865322154</p>
+
+
+            </div>
+            <div class="hosbtn">
+                <a href="https://zydushospitals.com/" target="_blank"><button>Website</button></a>
+                <a href="https://www.google.com/maps/dir/21.2495721,72.9228597/zydus+hospital/@22.1273566,71.7570384,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x395e9b5e464673c1:0x4aa886904308b889!2m2!1d72.5175197!2d23.0585156" target="_blank">
+                    <button>Directions</button>
+                </a>
+            </div>
+            <div class="hos">
+                <p>Zydus Hospital</p>
+                <p>Address: Old Padra Rd, nr. Akshar Chowk, Muj Mahuda, Vadodara, Gujarat 390020</p>
+                <p>Call : 6532988754</p>
+
+
+            </div>
+            <div class="hosbtn">
+                <a href="https://zydushospitals.com/" target="_blank"><button>Website</button></a>
+                <a href="https://www.google.com/maps/dir/21.2495721,72.9228597/zydus+hospital+vadodara/@21.7569263,72.4554432,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x395fc7a11137aa49:0x5ee29dd08ceb62d8!2m2!1d73.1649581!2d22.2820719" target="_blank">
+                    <button>Directions</button>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>

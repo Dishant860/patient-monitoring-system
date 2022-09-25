@@ -1,0 +1,297 @@
+*{
+    user-select: none;
+}
+body{
+    background-color: #080710;
+ 
+}
+body::-webkit-scrollbar {
+    display: none; 
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.main{
+    height: 950px;
+    width: 100%;
+    display: flex;
+}
+.side{
+    height: 650px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 20px;
+    
+}
+.panel{
+    height: 650px;
+    width: 1140px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.logo{
+    height: 80px;
+    width: 100px;
+    margin-top: -1px;
+    padding: 0;
+    border-width: 50%;
+    margin-left: 10px;
+
+}
+.pm{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+    border: none;
+    padding: 0;
+    
+    color: whitesmoke;
+}
+::placeholder{
+    color: whitesmoke;
+}
+
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+    border-radius: 40px;
+    padding: 0 10px;
+    margin-top: 1px;
+    font-size: 17px;
+    font-weight: 300;
+
+}
+.circle{
+    height: 41px;
+    width: 51px;
+    background-color: #28272f;
+    border-radius: 50%;
+    margin-left: -55px;
+    margin-top: 2px;
+}
+#sdp{
+    margin-top: 10px;
+}
+.search{
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 500px;
+    display: flex;
+}
+#sicon{
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+.search-btn{
+    color:whitesmoke;
+    float: right;
+   margin-top: 5px;
+    border-radius: 50%;
+    margin-left: -40px;
+}
+
+.fa-bell{
+    color: whitesmoke;
+    margin-left: 60px ;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.prfle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.fa-gear{
+    color: whitesmoke;
+    margin-left: 50px ;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.fa-user-doctor{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 40px; 
+}
+.profile{
+    display: flex;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.side a{
+    text-decoration: none;
+}
+.pname{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#hline{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #080710;
+    padding: 0;
+}
+#doc{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px; 
+
+}
+.sd{
+    display: flex;
+}
+.sd i{
+    font-size: 20px;
+}
+#sdp{
+  color: whitesmoke;
+  margin-top: 35px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.fa-hospital{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px; 
+
+}
+.fa-star-of-life{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px;    
+}
+.fa-capsules{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 35px;    
+}
+#pay{
+    color: whitesmoke;
+    margin-left: 40px ;
+    margin-top: 30px;  
+    font-size: 30px;
+}
+.setting{
+    margin-left: -10px;
+    display: flex;
+    margin-top: -20px;
+}
+#set{
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.pi{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.pl{
+    height: 300px;
+    width: 550px;
+    background-color: rgba(255,255,255,0.13);
+
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+
+
+
+
+#pl{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 40px;
+  
+}
+#hline1{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #080710;
+    padding: 0;
+    margin-top:  -20px;
+}
+
+.patienticon{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.plname{
+    display: flex;
+}
+
+
+.inputmedi input{
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.inputmedi p{
+    font-size: 20px;
+color: white;
+margin-top: 40px;
+}
+.inputmedi{
+margin-left: 70px;
+margin-top: -10px;
+}
+.inputmedia input{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.inputmedia p{
+    font-size: 20px;
+color: white;
+margin-top: 40px;
+}
+.inputmedia{
+margin-left: 70px;
+margin-top: -10px;
+}
+
+#add{
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 130px;
+    border-radius: 5px;
+    background-color: #37363e;
+    color: white;
+    border-color: #1baff3;
+}
+#remove{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 120px;
+    border-radius: 5px;
+    background-color: #37363e;
+    color: white;
+    border-color: #1baff3;
+}
+#hline2{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: #080710;
+    padding: 0;
+    margin-top:  10px;
+}
