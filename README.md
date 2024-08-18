@@ -1,5 +1,5 @@
 # Uphar
-I developed this patient monitoring web-application using python with Django framework.
+I have created this patient monitoring web-application using python with Django framework.
 
 At first, download Uphar 2.zip file and unzip in your device.
 Open your code editor and open Uphar 2 folder.
